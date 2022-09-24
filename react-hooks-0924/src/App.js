@@ -6,7 +6,11 @@ function App() {
   const [showInput, setShowInput] = useState(true)
   return (
     <div>
-      <Header showInput={showInput} handleChange={(e) => setShowInput(e)}></Header>
+      <Header
+        showInput={showInput}
+        openInput={() => {
+          setShowInput(!showInput)
+        }}></Header>
       <AddInput showInput={showInput}></AddInput>
     </div>
   )

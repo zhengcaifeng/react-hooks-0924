@@ -1,17 +1,12 @@
-import { React, useState } from 'react'
+import { React } from 'react'
 
 function Header(props) {
-  const { showInput } = props
-  const [showTitle, setTitle] = useState(showInput)
-  const handleChange = () => {
-    setTitle(!showTitle)
-    return showTitle
-  }
+  const { openInput } = props
+
   return (
     <div className="flex-between">
       <h1>事件待办</h1>
-      {/* <span onClick={openInput}>&#43;</span> */}
-      <button onClick={() => handleChange()}>改变</button>
+      <span onClick={openInput}>&#43;</span>
     </div>
   )
 }

@@ -1,0 +1,22 @@
+li {
+  height: 50px;
+  align-items: center;
+  padding: 10px;
+}
+.content {
+  /* justify-content: center; */
+  align-items: center;
+}
+.check-box {
+  width: 16px;
+  height: 16px;
+  margin: 10px;
+}
+
+.item-wrap {
+  justify-content: space-between;
+}
+
+.btn {
+  margin-left: 10px;
+}
